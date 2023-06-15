@@ -4,7 +4,9 @@ object Expressions extends App {
 
   /*
   In Scala, an expression is a piece of code that produces a value when evaluated.
-  It can be a simple value, a function call, a mathematical operation like pow, or a combination of these. */
+  It can be a simple value, a function call, a mathematical operation like pow, or a combination of these.
+  Side effects are expressions returning Unit
+  */
 
   //if expression
   val aCondition = true
@@ -45,10 +47,23 @@ object Expressions extends App {
 
 
 
+  /*Difference in Datatypes of the foloowing*/
+  val a = "hello world"
+  val b = println("hello world")
 
+  val someValue ={
+    2<3
+  }
 
+  println(someValue)
 
-  
+  val someOtherValue = {
+    if (someValue) 239 else 971
+    231
+  }
+
+  println(someValue)
+
 
 
 }

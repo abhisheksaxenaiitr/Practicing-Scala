@@ -1,5 +1,7 @@
 package Absolute_Basics
 
+import scala.annotation.tailrec
+
 object Functions extends App{
   //Normal Function
   def aFunction(a:String, b:Int): String = {
@@ -27,6 +29,14 @@ object Functions extends App{
     if (n==0) accumulator
     else n*Factorial(n-1, accumulator)
   }
+
+  def aBigFunction(n:Int) = {
+    def aSmallFunction(a:Int, b:Int) = a + b
+
+    aSmallFunction(n, n-1)
+  }
+
+  println(aBigFunction(10))
 
 
 
