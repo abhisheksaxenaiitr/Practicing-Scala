@@ -1,11 +1,11 @@
 package Absolute_Basics
 
 import scala.annotation.tailrec
+import scala.jdk.Accumulator
 
 object Recursion extends App {
   def Factorial(x: Int): Int =
   {
-
     @tailrec
     def factorial(accumulator: Int, n: Int): Int =
     {
@@ -38,6 +38,7 @@ object Recursion extends App {
 
 
 
+
   def sumOfDigits(num:Int):Int = {
     @tailrec
     def totalSum(n:Int, accumulator:Int): Int ={
@@ -51,6 +52,80 @@ object Recursion extends App {
   println(sumOfDigits(123416))
 
 
+
+
+  def reverseInteger(num:Int):Int = {
+    @tailrec
+    def reversedNumber(n: Int, accumulator: Int):Int ={
+      if (n <= 1) accumulator + n%10
+      else reversedNumber(n/10, ((n%10) + accumulator)*10 )
+    }
+
+    reversedNumber(num, 0)
+  }
+
+  println(reverseInteger(12367))
+
+
+
+
+  def powerOfNumber(num:Int, power:Int): Int = {
+    def calculatedNumber(n:Int, p:Int, accumulator:Int):Int = {
+      if (p==0) accumulator
+      else calculatedNumber(n, p-1, accumulator*n)
+    }
+
+    calculatedNumber(num, power, 1)
+  }
+
+  println(powerOfNumber(5,4))
+
+
+
+
+  def sumOfnNaturalNumbers(num:Int) :Int ={
+    def totalSum(n:Int, accumulator:Int):Int = {
+      if (n==0) accumulator
+      else totalSum(n-1, n + accumulator)
+    }
+
+    totalSum(num, 0)
+  }
+
+  println(sumOfnNaturalNumbers(10))
+
+
+
+
+
+  val arr: Array[Int] = Array(1,2,5,0,10,-1)
+
+  def minimumElement(array: Array[Int]): Int ={
+    val l = array.length
+    def minimumNumber(arr: Array[Int], size: Int, accumulator: Int):Int = {
+      if (size<=1) accumulator
+      else minimumNumber(arr, size-1, if (accumulator>arr(size-2)) arr(size-2) else accumulator)
+    }
+
+    minimumNumber(array, l,  array(array.length-1))
+  }
+
+  println(minimumElement(arr))
+
+
+
+
+  def checkPrime(num:Int): Boolean = {
+    def ifPrime(n: Int, accumulator: Int) : Boolean ={
+      if (accumulator == 0) false
+      else if (n<=2) true
+      else ifPrime(n-1, num%(n-1) )
+    }
+
+    ifPrime(num, 1)
+  }
+
+  println(checkPrime(23))
 
 
 
