@@ -130,6 +130,35 @@ object Recursion extends App {
 
 
 
+  def concatenateString(given_string: String, times: Int): String = {
+    def finalString(str: String, n: Int, accumulator: String): String = {
+      if (n<=0) accumulator
+      else finalString(str, n-1, str + accumulator)
+    }
+
+    finalString(given_string, times, "")
+  }
+
+  println(concatenateString("Hello", 5))
+
+
+/*  def fiboncciNumber(position: Int):Int ={
+    def fibonacci(s: Int, e:Int, accumulator: Int, l:Int):Int = {
+      if (l<=1) accumulator + 1
+      else fibonacci(e, s + e,  s + e  , l-1)
+    }
+
+
+    fibonacci(0, 1, 0, position)
+  }
+
+  println(fiboncciNumber(6))
+
+//  0 1 1 2 3 5 8 13 21 34 55*/
+
+
+
+
 
 }
 
