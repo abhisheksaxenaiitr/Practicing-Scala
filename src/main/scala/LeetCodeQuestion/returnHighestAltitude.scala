@@ -1,8 +1,6 @@
 /*https://leetcode.com/problems/find-the-highest-altitude/?envType=study-plan-v2&envId=leetcode-75*/
 package LeetCodeQuestion
 
-import scala.annotation.tailrec
-
 object returnHighestAltitude extends App {
 
 
