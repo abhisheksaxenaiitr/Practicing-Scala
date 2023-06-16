@@ -37,3 +37,5 @@ object mergeStringsAlternatively extends App {
   val merged = mergeStringsAlternatively(str1, str2)
   println(merged)
 }
+
+/*2*/
