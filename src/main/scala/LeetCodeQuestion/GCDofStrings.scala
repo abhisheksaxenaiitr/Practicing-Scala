@@ -1,3 +1,5 @@
+
+
 /*https://leetcode.com/problems/greatest-common-divisor-of-strings/?envType=study-plan-v2&envId=leetcode-75*/
 
 package LeetCodeQuestion
@@ -41,9 +43,9 @@ object GCDofStrings extends App {
   println(greatestCommonString.getOrElse(""))
 
 
-  }
+}
 
-/*1*/
+
 
 
 

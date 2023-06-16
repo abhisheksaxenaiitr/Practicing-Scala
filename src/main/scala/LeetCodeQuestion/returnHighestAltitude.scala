@@ -1,3 +1,5 @@
+
+
 /*https://leetcode.com/problems/find-the-highest-altitude/?envType=study-plan-v2&envId=leetcode-75*/
 package LeetCodeQuestion
 
@@ -39,11 +41,10 @@ object returnHighestAltitude extends App {
 
   val input = Array(-4, -3, -2, -1, 4, 3, 2)
   val output = getOutputArray(input)
-//println(output.foreach(println))
+  //println(output.foreach(println))
 
   println(maxElement(getOutputArray(input)))
 
 
 }
 
-/*3*/

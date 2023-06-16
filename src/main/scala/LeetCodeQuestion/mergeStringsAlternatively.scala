@@ -1,3 +1,5 @@
+
+
 /*https://leetcode.com/problems/merge-strings-alternately/?envType=study-plan-v2&envId=leetcode-75*/
 
 package LeetCodeQuestion
@@ -38,4 +40,3 @@ object mergeStringsAlternatively extends App {
   println(merged)
 }
 
-/*2*/
