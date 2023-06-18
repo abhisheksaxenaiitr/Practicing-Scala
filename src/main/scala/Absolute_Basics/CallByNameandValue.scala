@@ -2,16 +2,23 @@ package Absolute_Basics
 
 object CallByNameandValue extends App {
 
-  //Call By Value
-  def test(a: Int) = a * a
+  def calledByValue(x: Long) ={
+    println("By Value: " + x)
+    println("By Value: " + x)
+  }
 
-  //Call By Name
-  def test(a: => Int) = a * a
+  def calledByName(x: => Long) ={
+    println("By Name: " + x)
+    println("By Name: " + x)
+  }
+
+
+  println(calledByValue(System.nanoTime()))
+  println(calledByName(System.nanoTime()))
 
   /*Call by Value:
-  When a function is called by value, the argument expression is evaluated before the function is called, and the
-  resulting value is passed to the function. This means that the argument expression is evaluated only once, regardless
-  of how many times it is used within the function.
+  -> Value is computed before call
+  -> Same value is used everywhere
    */
 
   /*Call By Name
