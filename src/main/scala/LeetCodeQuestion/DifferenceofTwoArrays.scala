@@ -1,5 +1,3 @@
-
-
 /*https://leetcode.com/problems/find-the-difference-of-two-arrays/?envType=study-plan-v2&envId=leetcode-75*/
 package LeetCodeQuestion
 
