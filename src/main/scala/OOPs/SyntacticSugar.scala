@@ -1,3 +1,4 @@
+/*
 package OOPs
 
 import scala.language.postfixOps
@@ -34,3 +35,4 @@ object SyntacticSugar extends App {
 }
 
 
+*/
