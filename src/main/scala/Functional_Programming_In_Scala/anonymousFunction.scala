@@ -1,3 +1,4 @@
+
 package Functional_Programming_In_Scala
 
 object anonymousFunction extends App {
