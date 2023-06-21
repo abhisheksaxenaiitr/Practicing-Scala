@@ -1,4 +1,3 @@
-
 /*https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75*/
 
 package LeetCodeQuestion
@@ -14,7 +13,6 @@ object kidsWithGreatestNumberofCandies extends App {
   }
 
   println(kidsWithCandies((Array(2,3,5,1,3)), 3))
-
 
 
 }
