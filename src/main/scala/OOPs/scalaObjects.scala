@@ -27,36 +27,7 @@ object scalaObjects extends App {
 
   /*Companion Objects */
 
-  class MyClass {
-    private var count: Int = 0
 
-    def increment(): Unit = {
-      MyClass.incrementCount() // Accessing companion object's method
-      count += 1
-    }
-
-    def displayCount(): Unit = {
-      println(s"Count: $count")
-    }
-  }
-
-  object MyClass {
-    private var totalCount: Int = 0
-
-    def incrementCount(): Unit = {
-      totalCount += 1
-    }
-
-    def displayTotalCount(): Unit = {
-      println(s"Total Count: $totalCount")
-    }
-  }
-
-  val obj = new MyClass()
-  obj.increment()
-  obj.displayCount()
-
-  MyClass.displayTotalCount()
 
 
 }
