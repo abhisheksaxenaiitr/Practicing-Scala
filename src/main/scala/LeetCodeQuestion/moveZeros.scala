@@ -7,12 +7,13 @@ package LeetCodeQuestion
 object moveZeros extends App {
   val nums = Array(0,1,0,3,12)
   val nonZeroArray = nums.filter(x => x!=0)
-  println(nonZeroArray.toList)
+  nonZeroArray.foreach(println)
 
   val zeroArray = nums.filter(x => x == 0)
-  println(zeroArray.toList)
+  zeroArray.foreach(println)
 
-  println((nonZeroArray ++ zeroArray).toList)
+  val c = (nonZeroArray ++ zeroArray)
+  c.foreach(println)
 
 
 

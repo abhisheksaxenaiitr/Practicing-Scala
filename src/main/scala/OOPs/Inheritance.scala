@@ -1,5 +1,6 @@
 object Inheritance extends App {
 
+
   class Animal(val name: String) {
     def sound(): String = "Makes a sound"
   }
