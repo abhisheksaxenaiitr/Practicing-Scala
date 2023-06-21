@@ -1,12 +1,6 @@
-
-
-
-
 /*https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/description/?envType=study-plan-v2&envId=leetcode-75*/
 
 package LeetCodeQuestion
-
-
 
 object kidsWithGreatestNumberofCandies extends App {
   def kidsWithCandies(candies: Array[Int], extraCandies: Int): List[Boolean] = {
